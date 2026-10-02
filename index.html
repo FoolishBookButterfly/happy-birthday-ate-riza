@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Para kay Ate Riza 🤍</title>
+  <meta name="description" content="A little birthday page — nine reasons, nine photos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+
+  <!-- ============ ENVELOPE OPENER ============ -->
+  <div class="envelope" id="envelope">
+    <div class="env-card">
+      <div class="env-flap" aria-hidden="true"></div>
+      <p class="env-to" id="envTo">Para kay</p>
+      <h1 class="env-name" id="envName">Ate Riza</h1>
+      <div class="env-line" aria-hidden="true"></div>
+      <button class="seal" id="openBtn" type="button"><span id="envBtn">Buksan 🤍</span></button>
+      <p class="env-hint">Open this envelope</p>
+    </div>
+    <div class="env-confetti" aria-hidden="true"></div>
+  </div>
+
+  <!-- ============ THE PAGE ============ -->
+  <main class="page" id="page">
+
+    <header class="intro reveal">
+      <p class="intro-eyebrow">♥</p>
+      <p class="intro-line hand" id="introLine"></p>
+      <div class="intro-arrow" aria-hidden="true">⌄</div>
+    </header>
+
+    <!-- the nine reasons, built from message.js -->
+    <section class="scraps" id="reasons" aria-label="Nine reasons"></section>
+
+    <!-- the video moment -->
+    <section class="video-moment" id="videoMoment"></section>
+
+    <!-- the letter -->
+    <section class="letter-section">
+      <div class="letter" id="letter">
+        <div class="letter-fold" aria-hidden="true"></div>
+        <h2 class="letter-heading" id="letterHeading"></h2>
+        <div id="letterBody"></div>
+        <p class="letter-sign hand" id="letterSign"></p>
+      </div>
+    </section>
+
+    <!-- finale -->
+    <footer class="finale" id="finale">
+      <div class="banderitas" id="banderitas" aria-hidden="true"></div>
+      <div class="collage" id="collage" aria-hidden="true"></div>
+      <div class="finale-text">
+        <p class="finale-l1 hand" id="finale1"></p>
+        <p class="finale-l2 hand" id="finale2"></p>
+        <p class="finale-heart">🤍</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ============ MUSIC ============ -->
+  <button class="music-btn" id="musicBtn" type="button" aria-label="Music on/off" title="Music">
+    <span class="music-icon" id="musicIcon">♪</span>
+    <span class="music-eq" id="musicEq" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+  <audio id="music" src="music.mp3" loop preload="auto"></audio>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="message.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
