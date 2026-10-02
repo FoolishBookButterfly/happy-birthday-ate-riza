@@ -27,7 +27,7 @@ const MESSAGE = {
   video: {
     file:    "received_1783238695596736.mp4",
     headline: "One more reason — press play.",
-    caption: "Pinapanood ko 'to kapag na-miss ko kayo. 🎬"
+    caption: "You appreciate everything. 🎬"
   },
 
   /* --- The 9 reasons (photo + reason + caption) --------------------- */
